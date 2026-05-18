@@ -8,12 +8,36 @@ public class simple_calculator
     {
         Scanner scn = new Scanner(System.in);
 
-        System.out.println("Enter first number : ");
-        int a = Integer.parseInt(scn.nextLine());
+        System.out.print("Enter first number : ");
+        double a = Double.parseDouble(scn.nextLine());
         
-        System.out.println("Enter second number : ");
-        int b = Integer.parseInt(scn.nextLine());
+        System.out.print("Enter second number : ");
+        double b = Double.parseDouble(scn.nextLine());
 
-        
+        System.out.print("Enter operator (+ , - , / , *) :");
+        char op = scn.nextLine().trim().charAt(0);
+
+        if(op == '+')
+        {
+            System.out.println(a + " + " + b + " = " + (a + b));        
+        }
+        else if(op == '-')
+        {
+            System.out.println(a + " - " + b + " = " + (a - b));        
+        }
+        else if(op == '/')
+        {
+            System.out.println(a + " / " + b + " = " + (a / b));        
+        }
+        else if(op == '*')
+        {
+            System.out.println(a + " * " + b + " = " + (a * b));        
+        }
+        else
+        {
+            System.out.println("OOPs !! Wrong operator....");
+        }
+
+        scn.close();
     }
 }
