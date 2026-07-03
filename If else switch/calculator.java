@@ -13,7 +13,7 @@ public class calculator
         int b = Integer.parseInt(scn.nextLine());
         System.out.println("Enter a operator(+ , - , / , *) : ");
         char op = scn.next().trim().charAt(0);
-
+ 
         switch(op)
         {
             case '+':
